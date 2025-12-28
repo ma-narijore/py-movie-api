@@ -25,6 +25,7 @@ def movie_list(request):
 
 @api_view(["GET", "PUT", "DELETE"])
 def movie_detail(request, pk):
+    "ijawhuf"
     if request.method == "GET":
         movie = Movie.objects.get(pk=pk)
         serializer = MovieSerializer(movie)
