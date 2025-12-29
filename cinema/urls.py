@@ -3,6 +3,6 @@ from .views import movie_list, movie_detail
 
 
 urlpatterns = (
-    path("movie/", movie_list, name="movie_list"),
-    path("movie/<int:pk>/", movie_detail, name="movie_detail"),
+    path("movies/", movie_list, name="movie_list"),
+    path("movies/<int:pk>/", movie_detail, name="movie_detail"),
 )

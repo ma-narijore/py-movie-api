@@ -1,12 +1,11 @@
 from rest_framework import serializers
-from rest_framework.renderers import JSONRenderer
 
 from cinema.models import Movie
 
 
 class MovieSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
-    title = serializers.CharField(max_length=100)
+    title = serializers.CharField(max_length=200)
     description = serializers.CharField(max_length=200)
     duration = serializers.IntegerField()
 
